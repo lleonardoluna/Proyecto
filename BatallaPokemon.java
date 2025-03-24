@@ -7,7 +7,7 @@ public class BatallaPokemon {
         Pokemon pikachu = new Pokemon("Pikachu", 50, 15, 5);
         Pokemon charmander = new Pokemon("Charmander", 50, 12, 6);
 
-        System.out.println("Selecciona tu Pokémon:");
+        System.out.println("Selecciona tu Pokemon:");
         System.out.println("1. Pikachu");
         System.out.println("2. Charmander");
 
@@ -16,7 +16,7 @@ public class BatallaPokemon {
         Pokemon enemigoPokemon = eleccion == 1 ? charmander : pikachu;
 
         System.out.println("\n¡Has elegido a " + tuPokemon.getNombre() + "!");
-        System.out.println("Tu enemigo es " + enemigoPokemon.getNombre() + ". ¡Que comience la batalla!\n");
+        System.out.println("Tu enemigo es " + enemigoPokemon.getNombre() + ". ¡Que se armen los vergazos!\n");
 
         // Batalla en tiempo real
         while (tuPokemon.estaVivo() && enemigoPokemon.estaVivo()) {
@@ -31,7 +31,7 @@ public class BatallaPokemon {
             } else if (accionJugador == 2) {
                 tuPokemon.debilitar(enemigoPokemon);
             } else {
-                System.out.println("Acción no válida, pierdes el turno.");
+                System.out.println("Accion no valida, pierdes el turno.");
             }
 
             if (!enemigoPokemon.estaVivo()) {
